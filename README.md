@@ -1,3 +1,4 @@
+![paty sportt](https://github.com/142343/PATY-SPORT/assets/162383603/9d55e9fb-56f7-451a-b1de-824b268bfee5)
 # PATY SPORT
 ### Problematica
 
