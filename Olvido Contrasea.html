@@ -19,7 +19,7 @@
     <nav class="navbar navbar-dark bg-dark">
         <!-- Navbar content -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Inicio</a>
+            <a class="navbar-brand" href="../index.html">Atras</a>
             <a class="navbar-brand" href="#">Deporte & Estilo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,14 +28,9 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Iniciar sesión</a>
+                        <a class="nav-link active" aria-current="page" href="../Inicio/InicioSesionIndex.html">Iniciar sesión</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Conocenos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactenos</a>
-                    </li>
+              
                 </ul>
 
             </div>
@@ -52,6 +47,57 @@
     ">
 
 
+
+<div class="whatsapp-float" id="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
+
+
+
+<style>
+
+
+
+.whatsapp-float {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px;
+height: 60px;
+background-color: #25d366;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+z-index: 1000;
+transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+width: 35px;
+height: 35px;
+}
+
+.whatsapp-float:hover {
+transform: scale(1.1);
+}
+
+</style>
+
+
+<script>
+document.getElementById("whatsapp-btn").addEventListener("click", function() {
+window.open("https://wa.me/31022844319", "_blank"); 
+}); 
+</script>
+
+
+
+
+
+
         <div class="container">
 
             <div class="form-container">
@@ -65,7 +111,7 @@
                     <br>
                         <button type="submit" class="btn btn-primary btn-block">Enviar código</button>
                         <hr>
-                        <p class="text-center mt-3">¿Ya tienes una cuenta? <a href="../Inicio/InicioSesionIndex.php">Iniciar
+                        <p class="text-center mt-3">¿Ya tienes una cuenta? <a href="../Inicio/InicioSesionIndex.html">Iniciar
                                 sesión</a></p>
                 </form>
             </div>
