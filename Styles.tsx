@@ -11,7 +11,7 @@ const RegisterStyles = StyleSheet.create({
     backgroundColor: '#C5CAE9',
     justifyContent: 'center',
     paddingVertical: 20,
-    paddingHorizontal: 15
+    paddingHorizontal: 15,
   },
   form: {
     width: '100%',
@@ -62,6 +62,25 @@ const RegisterStyles = StyleSheet.create({
     position: 'relative',
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  formFull: {
+    width: '100%',
+    marginBottom: 10,
+  },
+  passwordContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 0,
+    borderColor: '#ccc',
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    height: 40,
+    backgroundColor: '#ffffff',
+  },
+  passwordInput: {
+    flex: 1,
+    height: 40,
+    backgroundColor: '#ffffff',
   },
   formSelect: {
     backgroundColor: '#ffffff',
@@ -205,7 +224,7 @@ const RegisterStyles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 12,
     padding: 25,
-    maxHeight: '60%',
+    // Se eliminó maxHeight para que se muestre completo sin scroll
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -220,6 +239,7 @@ const RegisterStyles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     color: '#6610f2',
+    marginBottom: 15,
   },
   modalDivider: {
     height: 2,
@@ -234,6 +254,7 @@ const RegisterStyles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    width: '100%',
   },
   modalItemSelected: {
     backgroundColor: '#f3f0ff',

@@ -10,6 +10,7 @@ const RegisterViewModel = () => {
     Apellidos: "",
     Teléfono: "",
     Correo: "",
+    Password: "",
   });
 
   const onChange = (property: string, value: any) => {
