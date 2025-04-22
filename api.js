@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://192.168.10.12:3000'
+    baseURL: 'http://192.168.10.13:3000'
 });
 
 // Productos
@@ -54,8 +54,21 @@ export const getTallas = async () => {
     return response.data;
 };
 
+
+
+
+
 // Usuarios
-export const getUsuarios = async () => {
-    const response = await api.get('/usuario');
-    return response.data;
-};
+
+
+
+export const getUsuario = async () => { 
+    const response = await api.get('/usuario'); 
+    return response.data; 
+    }; 
+    
+    export const updateUsuario
+     = async (Num_Documento, usuario) => {
+        const response = await api.put(`/usuario/${Num_Documento}`, usuario);
+        return response.data;
+    };
