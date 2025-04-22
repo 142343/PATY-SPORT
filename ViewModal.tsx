@@ -1,8 +1,9 @@
 import React from "react";
-import { RemoveUserLocalUseCase } from "../../../../Dominio/useCases/UserLocal/RemoveUserLocal";
+import { RemoveUserLocalUseCase } from "../../../Dominio/useCases/UserLocal/RemoveUserLocal";
 
 
-export const ProfileInfoViewModel = () => {
+
+export const Usuario = () => {
     const removeSeccion = async () => {
         await RemoveUserLocalUseCase();
     }
@@ -11,4 +12,4 @@ export const ProfileInfoViewModel = () => {
     }
 }
 
-export default ProfileInfoViewModel;
+export default Usuario;
