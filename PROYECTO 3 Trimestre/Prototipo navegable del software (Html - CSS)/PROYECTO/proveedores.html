@@ -1,0 +1,335 @@
+<!-- Descomentarlo cuando sea definitivo, fuera de codepen
+<!DOCTYPE html>
+-->
+<html>
+
+<head>
+    <title>Proveedores - PATY SPORT</title>
+    <link rel="shortcut icon" href="icono1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<header>
+    <button onclick="scrollToSection('sobre-nosotros')">Sobre Nosotros</button>
+    <h1>Deporte & Estilo 🤍</h1>
+    <button onclick="window.location.href='Inicio.html'">Cerrar Sesión</button>
+</header>
+<!-- /.container-fluid -->
+</nav>
+<div class="breadcrumbs shadow-1">
+    <div class="container">
+        <div class="row">
+            <i class="material-icons"></i> Estas aquí:
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inicio.html">Iniciar sesión</a></li>
+                <li><a href="inventario.html">Inv.Productos</a></li>
+                <li><a href="proveedores.html">Proveedores</a></li>
+                <li><a href="usuario.html">Usuarios</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel z-depth-1">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <h6>Proveedores</h6>
+                        </div>
+                    </div>
+
+                    <div class="panel-content">
+                        <form class="">
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="tipoDocumento">Tipo de documento</label>
+                                        <select name="tipoDocumento" id="tipoDocumento" required>
+                                            <option value="cc">Cédula de ciudadanía</option>
+                                            <option value="ti">Tarjeta de identidad</option>
+                                            <option value="ce">Cédula de extranjería</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Número Documento</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Número">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputBanco" class="control-label">Nombres </label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputBanco"
+                                                placeholder="Nombres">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputBanco" class="control-label">Apellidos </label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputBanco"
+                                                placeholder="Apellidos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Dirección</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Dirección del proveedor">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Télefono</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Télefono">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Cantidad Producto</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Cantidad de cada producto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Estado Proveedor</label>
+                                        <div class="col-xs-12 col-sm-7 col-md-7">
+                                            <div class="form-group">
+                                                <select name="tipoDocumento" id="tipoDocumento" required>
+                                                    <option value="activo">Activo</option>
+                                                    <option value="inactivo">Inactivo</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- .row -->
+                                <div class="row" style="text-align: right;">
+                                    <!-- <button class="btn btn-default" type="submit" name="action">Cancel
+                              </button> -->
+                                    <div class="col-md-12">
+                                        <button class="btn2 btn2-primary" type="submit"><a
+                                                href="proveedores.html"></a>Agregar
+                                    </div>
+                                    </button>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!--.row-->
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="panel z-depth-1">
+                        <div class="panel-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table id="dataTable" class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tipo de documento</th>
+                                                    <th>Número documento</th>
+                                                    <th>Nombre</th>
+                                                    <th>Apellido</th>
+                                                    <th>Dirección</th>
+                                                    <th>Télefono</th>
+                                                    <th>Cantidad producto</th>
+                                                    <th>Estado proveedor</th>
+                                                    <th>Ajuste</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>11094097</td>
+                                                    <td>Robert</td>
+                                                    <td>Gomez</td>
+                                                    <td>El bodegon</td>
+                                                    <td>3133633819</td>
+                                                    <td>25 Chaquetas</td>
+                                                    <td>ACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>23163454</td>
+                                                    <td>Gladis</td>
+                                                    <td>Rivera</td>
+                                                    <td>Bodega san martín</td>
+                                                    <td>3102735585</td>
+                                                    <td>10 subaderas</td>
+                                                    <td>
+                                                        INACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>29745637</td>
+                                                    <td>Miguel Daniel</td>
+                                                    <td>Duarte Pinilla</td>
+                                                    <td>La aurora usme</td>
+                                                    <td>3104633013</td>
+                                                    <td>12 conjuntos</td>
+                                                    <td>
+                                                        ACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>75836846</td>
+                                                    <td>Mariela</td>
+                                                    <td>Diaz</td>
+                                                    <td>El tanque</td>
+                                                    <td>3042162068</td>
+                                                    <td>10 busos</td>
+                                                    <td>
+                                                        ACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>83745636</td>
+                                                    <td>Octavio</td>
+                                                    <td>Cruz</td>
+                                                    <td>La reforma</td>
+                                                    <td>3185783325</td>
+                                                    <td>8 camisas</td>
+                                                    <td>
+                                                        ACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>89785636</td>
+                                                    <td>Alexis</td>
+                                                    <td>Hurtado</td>
+                                                    <td>El tanque</td>
+                                                    <td>3023892144</td>
+                                                    <td>5 chaquetas con gorro</td>
+                                                    <td>
+                                                        INACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>136465287</td>
+                                                    <td>Maribel Johana</td>
+                                                    <td>Cucaita</td>
+                                                    <td>Yomasa usme</td>
+                                                    <td>3504722348</td>
+                                                    <td>10 conjuntos de subadera</td>
+                                                    <td>
+                                                        ACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>281046283</td>
+                                                    <td>Alejandro</td>
+                                                    <td>Nieto</td>
+                                                    <td>Chapinero</td>
+                                                    <td>3098275443</td>
+                                                    <td>7 camisas</td>
+                                                    <td>
+                                                        ACTIVO
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarproveedor.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--.row-->
+    </div>
+    <!--.container-->
+</div>
+<!--.body-content-->
+
+<footer
+style="margin-top: 50px; padding: 20px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #000000; color: #fff;  text-align: center;">
+<h2 class="footer2" style="font-size: 17px; ">Contacto: Patysport69@gmail.com | Teléfono: 3102283419
+</h2>
+</footer>

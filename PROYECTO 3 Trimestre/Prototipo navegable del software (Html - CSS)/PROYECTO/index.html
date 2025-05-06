@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATY SPORT</title>
+    <link rel="shortcut icon" href="icono1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <button onclick="scrollToSection('sobre-nosotros')">Sobre Nosotros</button>
+        <h1>Deporte & Estilo 🤍</h1>
+        <button onclick="window.location.href='Inicio.html'">Iniciar Sesión</button>
+    </header>
+    <main>
+        <div class="busqueda">
+            <input type="text" placeholder="Buscar...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="hero">
+            <h1 class="texto">PATY SPORT</h1>
+        </div>
+        <div class="carrusel">
+            <div class="slides">
+                <img src="rojo.png" alt="Moda 1">
+                <img src="banner2.png" alt="Moda 2">
+                <img src="banner.png" alt="Moda 3">
+            </div>
+        </div>
+
+        <section class="products" id="products">
+
+            <h1 class="heading"> Ultimos <span> diseños </span> </h1>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="sudaderarosada.jfif" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Conjunto tres piezas de sudadera Rosada</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="sudaderanegra.jfif" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Conjunto de sudadera Negra</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="sudaderagris.jfif" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Conjunto de sudadera gris</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="sudaderablanca.jfif" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Conjunto tres piezas de sudadera Blanca</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="sacosnike1.jpg" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Busos Nike con capota</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <span class="discount"></span>
+                    <div class="image">
+                        <img src="camisa.jfif" alt="">
+                        <div class="icons">
+                            <a href="#" class="fas fa-heart"></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Chaqueta leñadora</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="sobre-nosotros">
+            <div class="mision-vision">
+                <div class="vision">
+                    <h2>Nuestra Visión</h2>
+                    <p>Nuestra visión es convertirnos en la marca líder en ropa deportiva y casual, reconocida por
+                        nuestra dedicación a la calidad, la moda y la satisfacción del cliente. Aspiramos a expandir
+                        nuestra presencia en el mercado nacional e internacional, estableciendo Party Sport como
+                        sinónimo de innovación, estilo y funcionalidad. </p>
+                </div>
+                <div class="mision">
+                    <h2>Nuestra Misión</h2>
+                    <p>En Party Sport, nuestra misión es proporcionar ropa deportiva de alta calidad, cómoda y con
+                        estilo, diseñada para satisfacer las necesidades y gustos de nuestros clientes. Nos
+                        comprometemos a ofrecer productos innovadores y accesibles que inspiren confianza y comodidad en
+                        cada actividad física o evento casual. </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+        <h2 class="foteer2">Contacto: Patysport69@gmail.com | Teléfono: 3102283419</h2>
+        </p>
+    </footer>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slides img');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Cambia de imagen cada 3 segundos
+        showSlide(currentSlide);
+    </script>
+</body>
+
+</html>
