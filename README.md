@@ -6,7 +6,7 @@
 La empresa PATY SPORT vende ropa deportiva para dama y caballero. A pesar de tener un inventario manual en un cuaderno, enfrenta desafíos en la gestión de inventario que afectan la eficiencia y la satisfacción del cliente. La falta de digitalización y organización en la categorización de productos resulta en desorganización en las ventas y pérdida de control, lo que conduce al robo de prendas por parte de los empleados.
 
 
-### Objetivo General 
+### :stuck_out_tongue_winking_eye: Objetivo General 
 Desarrollar un sistema de gestión de inventario para la empresa PATY SPORT eficiente y adaptable que optimice los procesos de almacenamiento, seguimiento y control de los productos, con el fin de mejorar la precisión, la disponibilidad y la eficiencia operativa en toda la cadena de suministro.
 
 
