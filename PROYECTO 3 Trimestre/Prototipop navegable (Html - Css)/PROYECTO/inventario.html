@@ -1,0 +1,267 @@
+<!-- Descomentarlo cuando sea definitivo, fuera de codepen
+<!DOCTYPE html>
+-->
+<html>
+
+<head>
+    <title>Inventario - PATY SPORT</title>
+    <link rel="shortcut icon" href="icono1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<header>
+    <button onclick="scrollToSection('sobre-nosotros')">Sobre Nosotros</button>
+    <h1>Deporte & Estilo 🤍</h1>
+    <button onclick="window.location.href='Inicio.html'">Cerrar Sesión</button>
+</header>
+<!-- /.container-fluid -->
+</nav>
+<div class="breadcrumbs shadow-1">
+    <div class="container">
+        <div class="row">
+            <i class="material-icons"></i> Estas aquí:
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inicio.html">Iniciar sesión</a></li>
+                <li><a href="inventario.html">Inv.Productos</a></li>
+                <li><a href="proveedores.html">Proveedores</a></li>
+                <li><a href="usuario.html">Usuarios</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel z-depth-1">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <h6>Inventario Productos</h6>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <form class="">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Codigo</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Codigo del producto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputBanco" class="control-label">Nombre </label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputBanco"
+                                                placeholder="Nombre producto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Precio</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Precio de producto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="tipoDocumento">Estado</label>
+                                        <select name="tipoDocumento" id="tipoDocumento" required>
+                                            <option value="activo">Activo</option>
+                                            <option value="inactivo">Inactivo</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">IVA</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Iva del producto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">CategoriaProduco</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Categoria a la que pertenece el producto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Num provedor</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Numero del proveedor ">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- .row -->
+                            <div class="row" style="text-align: right;">
+                                <!-- <button class="btn btn-default" type="submit" name="action">Cancel
+                              </button> -->
+                                <div class="col-md-12">
+                                    <button class="btn2 btn2-primary" type="submit"><a
+                                            href="inventario.html"></a>Agregar
+                                </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!--.row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel z-depth-1">
+                        <div class="panel-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table id="dataTable" class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>CódigoProduc</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad disponible</th>
+                                                    <th>Estado</th>
+                                                    <th>IVA</th>
+                                                    <th>CategoriaProduc</th>
+                                                    <th>NumProveedor</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>001</td>
+                                                    <td>Sudadra Dama</td>
+                                                    <td>25000</td>
+                                                    <td>25</td>
+                                                    <td>ACIVO</td>
+                                                    <td>19</td>
+                                                    <td>3</td>
+                                                    <td>762452443</td>
+                                                    <td>
+                                                        <button class="btn btn-default"> <a href="editarProducto.html">
+                                                                Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>002</td>
+                                                    <td>Sudadra Caballero</td>
+                                                    <td>25000</td>
+                                                    <td>20</td>
+                                                    <td>ACIVO</td>
+                                                    <td>19</td>
+                                                    <td>4</td>
+                                                    <td>89785636</td>
+                                                    <td>
+                                                        <button class="btn btn-default"> <a
+                                                                href="editarProducto.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>003</td>
+                                                    <td>Buso Unicolor</td>
+                                                    <td>45000</td>
+                                                    <td>14</td>
+                                                    <td>ACIVO</td>
+                                                    <td>19</td>
+                                                    <td>2</td>
+                                                    <td>29745637</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarProducto.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>004</td>
+                                                    <td>Buso tipo chaqueta</td>
+                                                    <td>55000</td>
+                                                    <td>12</td>
+                                                    <td>ACIVO</td>
+                                                    <td>19</td>
+                                                    <td>5</td>
+                                                    <td>29745637</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarProducto.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>005</td>
+                                                    <td>Chaueta Impermeable</td>
+                                                    <td>65000</td>
+                                                    <td>20</td>
+                                                    <td>ACIVO</td>
+                                                    <td>19</td>
+                                                    <td>5</td>
+                                                    <td>11094097</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarProducto.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--.row-->
+    </div>
+    <!--.container-->
+</div>
+<!--.body-content-->
+<footer>
+    <div class="footer-system">
+        <div class="container">
+            Paty Sport
+        </div>
+    </div>
+    <div class="footer-system">
+        <div class="container">
+            JANL © 2024 - Todos los derechos reservados
+        </div>
+    </div>
+</footer>

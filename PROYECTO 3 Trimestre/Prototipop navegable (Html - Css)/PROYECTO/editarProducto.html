@@ -1,0 +1,136 @@
+<!-- Descomentarlo cuando sea definitivo, fuera de codepen
+<!DOCTYPE html>
+-->
+<html>
+
+<head>
+    <title>EditarProducto - PATY SPORT</title>
+    <link rel="shortcut icon" href="icono1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<header>
+    <button onclick="scrollToSection('sobre-nosotros')">Sobre Nosotros</button>
+    <h1>Deporte & Estilo 🤍</h1>
+    <button onclick="window.location.href='Inicio.html'">Cerrar Sesión</button>
+</header>
+<!-- /.container-fluid -->
+</nav>
+<div class="breadcrumbs shadow-1">
+    <div class="container">
+        <div class="row">
+            <i class="material-icons"></i> Estas aquí:
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inicio.html">Iniciar sesión</a></li>
+                <li><a href="inventario.html">Inv.Productos</a></li>
+                <li><a href="editarProducto.html">Editar.Product</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel z-depth-1">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <h6>Inventario Productos</h6>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <form class="">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Codigo</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Codigo del producto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputBanco" class="control-label">Nombre </label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputBanco"
+                                                placeholder="Nombre producto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Precio</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Precio de producto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="tipoDocumento">Estado</label>
+                                        <select name="tipoDocumento" id="tipoDocumento" required>
+                                            <option value="activo">Activo</option>
+                                            <option value="inactivo">Inactivo</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">IVA</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Iva del producto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">CategoriaProduco</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Categoria a la que pertenece el producto">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Num provedor</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Numero del proveedor ">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <!-- .row -->
+                            <div class="row" style="text-align: right;">
+                                <!-- <button class="btn btn-default" type="submit" name="action">Cancel
+                              </button> -->
+                                <div class="col-md-12">
+                                    <button class="btn1 btn1-primary" type="submit"> <a href="inventario.html">Guardar
+                                </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>

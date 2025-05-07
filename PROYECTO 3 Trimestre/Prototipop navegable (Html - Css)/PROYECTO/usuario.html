@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <title>Usuarios - PATY SPORT</title>
+    <link rel="shortcut icon" href="icono1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <button onclick="scrollToSection('sobre-nosotros')">Sobre Nosotros</button>
+    <h1>Deporte & Estilo 🤍</h1>
+    <button onclick="window.location.href='Inicio.html'">Cerrar Sesión</button>
+</header>
+<!-- /.container-fluid -->
+</nav>
+<div class="breadcrumbs shadow-1">
+    <div class="container">
+        <div class="row">
+            <i class="material-icons"></i> Estas aquí:
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inicio.html">Iniciar sesión</a></li>
+                <li><a href="inventario.html">Inv.Productos</a></li>
+                <li><a href="proveedores.html">Proveedores</a></li>
+                <li><a href="usuario.html">Usuario</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="body-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel z-depth-1">
+                    <div class="panel-header">
+                        <div class="panel-title">
+                            <h6>Usuarios</h6>
+                        </div>
+                    </div>
+
+                    <div class="panel-content">
+                        <form class="">
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="tipoDocumento">Tipo de documento</label>
+                                        <select name="tipoDocumento" id="tipoDocumento" required>
+                                            <option value="cc">Cédula de ciudadanía</option>
+                                            <option value="ti">Tarjeta de identidad</option>
+                                            <option value="ce">Cédula de extranjería</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Número Documento</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="Número">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputBanco" class="control-label">Nombres </label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputBanco"
+                                                placeholder="Nombres">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputBanco" class="control-label">Apellidos </label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputBanco"
+                                                placeholder="Apellidos">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Teléfono</label>
+                                        <div class="">
+                                            <input type="number" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="teléfono">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputCliente" class="control-label">Correo eletronico</label>
+                                        <div class="">
+                                            <input type="text" class="form-control boxed-input" id="inputCliente"
+                                                placeholder="correo eletronico">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="tipoDocumento">Tipo de usuario</label>
+                                        <select name="tipoDocumento" id="tipoDocumento" required>
+                                            <option value="pro">Propietario</option>
+                                            <option value="adm">Administrador</option>
+                                            <option value="vend">Vendedor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .row -->
+                            <div class="row" style="text-align: right;">
+                                <!-- <button class="btn btn-default" type="submit" name="action">Cancel
+                              </button> -->
+                                <div class="col-md-12">
+                                    <button class="btn2 btn2-primary" type="submit"> <a
+                                            href="editarUsuario.html">Agregar</a>
+                                </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!--.row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel z-depth-1">
+                        <div class="panel-content">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table id="dataTable" class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Tipo de documento</th>
+                                                    <th>Número documento</th>
+                                                    <th>Nombre</th>
+                                                    <th>Apellido</th>
+                                                    <th>Télefono</th>
+                                                    <th>Correo Electronico</th>
+                                                    <th>Tipo de usuario</th>
+                                                    <th>Ajuste</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>51964869</td>
+                                                    <td>Laureana</td>
+                                                    <td>Cortes Laguna</td>
+                                                    <td>2147483647</td>
+                                                    <td>Laureana1@gmail.com</td>
+                                                    <td>Propietario</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarUsuario.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>52458241</td>
+                                                    <td>Patricia</td>
+                                                    <td>Escobar Cortes</td>
+                                                    <td>2147483647</td>
+                                                    <td>Pattriciaec85k@hotmail.com</td>
+                                                    <td>Propietario</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarUsuario.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>80491492</td>
+                                                    <td>Jonny Duverney</td>
+                                                    <td>Pulido Monroy</td>
+                                                    <td>2147483647</td>
+                                                    <td>JonnyDeverney1972@hotmail.com</td>
+                                                    <td>Vendedor</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarUsuario.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>1109412437</td>
+                                                    <td>Nayarit Glet </td>
+                                                    <td>Gutierrez Nieto</td>
+                                                    <td>2147483647</td>
+                                                    <td>nayisnieto3@gmail.com</td>
+                                                    <td>Vendedor</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarUsuario.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C.C</td>
+                                                    <td>1006093905</td>
+                                                    <td>Maryi</td>
+                                                    <td>Torres</td>
+                                                    <td>2147483647</td>
+                                                    <td>maryi56@gmail.com</td>
+                                                    <td>Administrador</td>
+                                                    <td>
+                                                        <button class="btn btn-default"><a
+                                                                href="editarUsuario.html">Editar</button></a>
+                                                        <button class="btn btn-danger">Remover</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--.row-->
+    </div>
+    <!--.container-->
+</div>
+<!--.body-content-->
+<footer>
+    <div class="footer-system">
+        <div class="container">
+            Paty Sport
+        </div>
+    </div>
+    <div class="footer-system">
+        <div class="container">
+            JANL © 2024 - Todos los derechos reservados
+        </div>
+    </div>
+</footer>
